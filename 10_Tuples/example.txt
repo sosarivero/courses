@@ -1,0 +1,1 @@
+World's simplest online letter frequency calculator for web developers and programmers. Just paste your text in the form below, press the Calculate Letter Frequency button, and you'll get letter statistics. Press a button – get the character count.
