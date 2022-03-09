@@ -9,4 +9,4 @@ for i in range(len(s)):
     elif s[i] == "b" and s[i + 1] == "o" and s[i + 2] == "b":
         bob_counter += 1
 
-print("Nymber of times bob occurs is: ", bob_counter)
+print("Number of times bob occurs is: ", bob_counter)
