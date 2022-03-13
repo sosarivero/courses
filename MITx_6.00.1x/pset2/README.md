@@ -1,4 +1,4 @@
-# Problem Set 1
+# Problem Set 2
 
 ## Problem 1 - Paying Debt off in a Year
 
