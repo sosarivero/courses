@@ -115,7 +115,7 @@ class Message(object):
 
         for i in range(26):
             if i + shift > 25:
-                alt = (i + shift) % 25
+                alt = (i + shift) % 26
                 self.shift_dict[chr(65+i)] = string.ascii_uppercase[alt]
                 self.shift_dict[chr(97+i)] = string.ascii_lowercase[alt]
             else:
@@ -245,7 +245,7 @@ class CiphertextMessage(Message):
         best_string = ""
         most_matches = 0
 
-        for i in range(26):
+        for i in range(25):
             shifted = self.apply_shift(i)
             tmp = shifted.split(' ')
             counter = 0
@@ -269,3 +269,13 @@ print('Actual Output:', plaintext.get_message_text_encrypted())
 ciphertext = CiphertextMessage('jgnnq')
 print('Expected Output:', (24, 'hello'))
 print('Actual Output:', ciphertext.decrypt_message())
+
+# Problem 4 - Decrypt a story
+
+
+def decrypt_story():
+    story_cipher = CiphertextMessage(get_story_string())
+    return story_cipher.decrypt_message()
+
+
+print(decrypt_story())
